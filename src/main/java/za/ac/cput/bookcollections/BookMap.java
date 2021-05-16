@@ -14,8 +14,8 @@ public class BookMap {
         bookMap.put(key, book);
     }
 
-    public void removeFromBookMap(String key, Book book){
-        bookMap.remove(book);
+    public void removeFromBookMap(String key){
+        bookMap.remove(key);
     }
 
     public Book findInBookMap(String key){

@@ -18,7 +18,12 @@ public class BookSet {
         bookSet.remove(book);
     }
 
-    public void findInBookSet(){
+    public Book findInBookSet(String title){
+        for(Book book: bookSet){
+            if(book.getBookTitle().equals(title))
+                return book;
 
+        }
+        return null;
     }
 }

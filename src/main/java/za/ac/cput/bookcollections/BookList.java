@@ -14,11 +14,16 @@ public class BookList {
         bookList.add(book);
     }
 
-    public void removeFromBookList(Book book){
-        bookList.remove(book);
+    public void removeFromBookList(int index){
+        bookList.remove(index);
     }
 
-    public void findInBookList(){
+    public Book findInBookList(String title){
+        for(Book book: bookList){
+            if(book.getBookTitle().equals(title))
+                return book;
 
+        }
+        return null;
     }
 }

@@ -15,11 +15,16 @@ public class BookCollection {
         bookCollection.add(book);
     }
 
-    public void removeFromBookCollection(Book book){
-        bookCollection.remove(book);
+    public void removeFromBookCollection(int index){
+        bookCollection.remove(index);
     }
 
-    public void findInBookCollection(){
+    public Book findInBookCollection(String title){
+        for(Book book: bookCollection){
+            if(book.getBookTitle().equals(title))
+                return book;
 
+        }
+        return null;
     }
 }
