@@ -21,4 +21,8 @@ public class BookMap {
     public Book findInBookMap(String key){
         return bookMap.get(key);
     }
+
+    public int sizeOfBookMap(){
+        return bookMap.size();
+    }
 }

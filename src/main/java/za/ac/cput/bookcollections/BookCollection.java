@@ -15,8 +15,8 @@ public class BookCollection {
         bookCollection.add(book);
     }
 
-    public void removeFromBookCollection(int index){
-        bookCollection.remove(index);
+    public void removeFromBookCollection(Book book){
+        bookCollection.remove(book);
     }
 
     public Book findInBookCollection(String title){
@@ -26,5 +26,9 @@ public class BookCollection {
 
         }
         return null;
+    }
+
+    public int sizeOfBookCollection(){
+        return bookCollection.size();
     }
 }

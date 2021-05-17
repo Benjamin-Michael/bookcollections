@@ -9,12 +9,12 @@ public class Book {
         this.bookHolder = "";
     }
 
-    public Book(String bookTitle, String author, String publisher, String bookHolder, boolean bookAvailable) {
+    public Book(String bookTitle, String author, String publisher) {
         this.bookTitle = bookTitle;
         this.author = author;
         this.publisher = publisher;
-        this.bookHolder = bookHolder;
-        this.bookAvailable = bookAvailable;
+        this.bookHolder = "";
+        this.bookAvailable = true;
     }
 
     public void setBookTitle(String bookTitle) {

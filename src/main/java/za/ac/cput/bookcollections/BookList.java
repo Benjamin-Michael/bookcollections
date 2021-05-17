@@ -14,8 +14,8 @@ public class BookList {
         bookList.add(book);
     }
 
-    public void removeFromBookList(int index){
-        bookList.remove(index);
+    public void removeFromBookList(Book book){
+        bookList.remove(book);
     }
 
     public Book findInBookList(String title){
@@ -25,5 +25,9 @@ public class BookList {
 
         }
         return null;
+    }
+
+    public int sizeOfBookList(){
+        return bookList.size();
     }
 }

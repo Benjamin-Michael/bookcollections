@@ -26,4 +26,8 @@ public class BookSet {
         }
         return null;
     }
+
+    public int sizeOfBookSet(){
+        return bookSet.size();
+    }
 }
